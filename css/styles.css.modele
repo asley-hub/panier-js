@@ -1,0 +1,90 @@
+body{
+    font-family: Helvetica;
+}
+#wrapper{
+    padding: 1em;
+}
+#panier {
+	width:300px;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+#products{
+	width: calc(100% - 315px);
+}
+
+.case-produit {
+	vertical-align: top;
+	display: inline-block;
+	width:250px;
+	border:1px solid #ccc;
+	padding: 15px;
+	margin:15px;
+}
+.case-produit p{
+	font-size:small;
+}
+.case-produit .prix{
+	font-weight:bold;
+	font-size:40px;
+	display: block;
+}
+.case-produit img{
+	display: block;
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	margin: 15px auto;
+}
+
+
+#panier-content .ligne-produit {
+	padding: 5px;
+	font-size:12px;
+	border-bottom:1px dotted #ccc;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+#panier-actions {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px dotted #333;
+}
+#panier .ligne-produit.produit-ok {
+	background: green;
+	color:white;
+}
+#panier .loading{
+	display: none;
+}
+#panier.panier-loading .loading{
+	display: inline-block;
+}
+#panier.panier-loading .retirer-produit,
+#panier.panier-loading #empty,
+#panier.panier-loading #buy{
+	display: none;
+}
+#panier.panier-ok .loading{
+	display: none;
+}
+#panier #order-ok{
+	display: none;
+}
+#panier.panier-ok #order-ok{
+	display: block;
+	color:orange;
+	font-weight: bold;
+}
+
+.retirer-produit {
+	font-size:12px;
+	border:0;
+	background: none
+}
+
+#filtre #ordre, #filtre #pages {
+	display: inline-block;
+	margin-right: 100px;
+}

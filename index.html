@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="data/liste-produits.js"></script>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="products">
+            <div id="filtre">
+                <div id="ordre">
+                    Trier par
+                    <select id="field">
+                        <option value="nom">Nom</option>
+                        <option value="prix">Prix</option>
+                    </select>
+                    <select id="sort">
+                        <option value="asc">Ascendant</option>
+                        <option value="desc">Descendant</option>
+                    </select>
+                </div>
+                <div id="pages">
+                    <button type="button" id="page-precedente">&laquo;</button>
+                    <span class="page">1</span>
+                    <button type="button" id="page-suivante">&raquo;</button>
+                </div>
+            </div>
+            <div id="liste-produits">
+            </div>
+            <!-- afficher ici la liste de tous les produits disponibles -->
+
+        </div>
+        <div id="panier" style="">
+            <h2>Votre panier</h2>
+            <div id="panier-content">
+
+                <!-- afficher ici la liste des produits qui ont été ajoutés dans le panier -->
+
+            </div>
+            <div id="panier-total">
+            </div>
+            <div id="panier-actions">
+                <button id="empty">Vider le panier</button>
+                <button id="buy">Commander</button><img class="loading" width="16"
+                    src="img/loader.gif">
+            </div>
+            <div id="order-ok">
+                Votre commande a été validée !
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
